@@ -1,4 +1,4 @@
-mod enums;
+mod rust_options;
 
 /*
   what are struct 
@@ -114,5 +114,5 @@ fn main() {
    
 
 
- enums::fn_enum();
+ rust_options::rust_options();
 }

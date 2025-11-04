@@ -1,4 +1,6 @@
- /*
+mod enums;
+
+/*
   what are struct 
   - structs are a way to create a custom data type
   - structs are similar to classes in other languages
@@ -59,7 +61,7 @@ impl  Car {
     //  Associated functions 
     //  associate functions are simply functions define inside an impl block, they are accoiated with the type not instances
     // associate functions do not take self because it's creating a new instance , not acting on exsisting onr
-    
+
     fn new(  owner: String,
     year:u32,
     fuel_level:f32,
@@ -108,9 +110,9 @@ fn main() {
 
    let latest_car= Car::new(String::from("ochula"), 2000, 3.0, 8_000);
 
-   println!("the lates model, {:?}", latest_car)
+   println!("the lates model, {:?}", latest_car);
    
 
 
-
+ enums::fn_enum();
 }

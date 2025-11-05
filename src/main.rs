@@ -1,4 +1,4 @@
-mod rust_options;
+mod rust_hashmaps;
 
 /*
   what are struct 
@@ -76,12 +76,12 @@ fn main() {
     // named-field struct
 
     let p = Points {y:1.0, x:2.0};
-    println!("your point is, {}", p.y);
+    // println!("your point is, {}", p.y);
 
     // Tuple struct
     let c:Color= Color(255, 0, 128);
 
-    println!("Tuple Struct = {:?}", c);
+    // println!("Tuple Struct = {:?}", c);
 
     let mut owner= Owner {name: String::from("James")};
     let secondOwner= owner;
@@ -95,7 +95,7 @@ fn main() {
 
     my_car.refule(3.0);
 
-    println!("car fuel level is {}", my_car.fuel_level);
+    // println!("car fuel level is {}", my_car.fuel_level);
     
     // Tuple struct
     let points_2D: (i32, i32) = (1,3);
@@ -114,5 +114,7 @@ fn main() {
    
 
 
- rust_options::rust_options();
+//  rust_options::rust_options();
+
+rust_hashmaps::hash_maps();
 }
